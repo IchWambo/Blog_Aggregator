@@ -36,8 +36,15 @@ This is crucial since the aggregator works on a user and always needs to be set 
 
 Here are some examples:
 
-register bob -> registers a new user with the name bob and logs him in as the current user and changes the user in the .gatorconfig file.
-addfeed "RSSFeed Name" <link> -> adds the RSSFeed and automatically adds a feed_follow for it to the user to scrape the feeds.
-agg <time> -> goes through all the feed_follows a user has and aggregates the RSSFeeds every <time> which should be in the format: 1s, 1m, 1h etc...
-browse <number> -> gets the <number> latest feeds for the user, the <number> can be omitted and will default to 2.
+register bob -> registers a new user with the name bob and logs him in as the current user and 
+changes the user in the .gatorconfig file.
+
+addfeed "RSSFeed Name" <link> -> adds the RSSFeed and automatically adds a feed_follow
+for it to the user to scrape the feeds.
+
+agg <time> -> goes through all the feed_follows a user has and aggregates the
+RSSFeeds every <time> which should be in the format: 1s, 1m, 1h etc...
+
+browse <number> -> gets the <number> latest feeds for the user, the <number> 
+can be omitted and will default to 2.
 
